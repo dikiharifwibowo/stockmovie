@@ -18,7 +18,7 @@ class App extends Component {
                         <Switch>
                             <Route exact path="/" component={Home} />
                             
-                            <Route exact path="/movie/:movieId"
+                            <Route path="/movie/:movieId"
                                 render={
                                     props => (
                                         <Movie
