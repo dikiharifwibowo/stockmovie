@@ -25,7 +25,6 @@ class Movie extends Component {
     }
 
     getMovieWithId = moviesEndPoint => {
-        const { match } = this.props;
         fetch(moviesEndPoint)
             .then(response => response.json())
             .then((movie) => {

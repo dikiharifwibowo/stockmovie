@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col, Container, ProgressBar } from "react-bootstrap";
 import BreadCrumbs from "../BreadCrumb/BreadCrumbs";
-import { BASE_IMG } from "../../../config";
 import './MovieInfo.css';
 import no_img_bg from '../img/bg-not-found.jpg';
 import MovieInfoBar from "../MovieInfoBar/MovieInfoBar";

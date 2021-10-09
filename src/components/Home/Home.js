@@ -104,7 +104,7 @@ class Home extends Component {
                         </Col>
                         
                         <Col sm = {6} className = "offset-sm-3 text-center">
-                            {movies.length == 0 ? <h2 >Not Found</h2> : ''}
+                            {movies.length === 0 ? <h2 >Not Found</h2> : ''}
                         </Col>
                     </Row>
                     <Row>
@@ -112,7 +112,7 @@ class Home extends Component {
                             movies.map((movie) => {
                                 return <ImageFrame
                                     key={movie.imdbID}
-                                    image={movie.Poster != 'N/A' ? `${movie.Poster}` : `${no_img}`}
+                                    image={movie.Poster !== 'N/A' ? `${movie.Poster}` : `${no_img}`}
                                     clickable={true}
                                     movieId={movie.imdbID}
                                     movieName={movie.Title}
